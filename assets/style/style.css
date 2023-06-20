@@ -40,7 +40,7 @@ p {
 	width: 50px;
 }
 .toggle-btn span {
-	width: 60px;
+	width: 50px;
 	height: 10px;
 	border-radius: 5px;
 	background: #09fbba;
@@ -48,6 +48,29 @@ p {
 	margin-top: 4px;
 	transition: 0.3s ease;
 }
+
+.active {
+	left: 0px !important;
+}
+
+.active span {
+	position: absolute;
+}
+
+.active span:nth-child(1) {
+	transform: rotate(45deg);
+	width: 100%;
+}
+
+.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.active span:nth-child(3) {
+	transform: rotate(135deg);
+	width: 100%;
+}
+
 li {
 	color: #292929;
 	list-style: none;
